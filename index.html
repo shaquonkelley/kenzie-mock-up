@@ -4,57 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
-    <link rel="stylesheet" href="base.css">
-    <style>
-    .container{
-        display: grid;
-        justify-items: center;
-    }
-    .header{
-        /* display: grid;
-        justify-items: center; */
-        text-align: center;
-    } 
-    .footer{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer h3{
-        display: flex;
-        order: -1;
-    }
-
-    .main_section{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        
-    }
-    </style>
+    <!-- <link rel="stylesheet" href="base.css"> -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 
 <body>
     <div class="container">
+
     <header class="header">
-        <h1>Meet Kenzie</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus repudiandae odit ut iste quaerat, eum molestiae ducimus deserunt unde odio rerum. Nesciunt accusamus tenetur nam sequi, itaque obcaecati praesentium possimus?</p>
+        <h1 class="header__title">Meet Kenzie</h1>
+        <p class="header__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus repudiandae odit ut iste quaerat, eum molestiae ducimus deserunt unde odio rerum. Nesciunt accusamus tenetur nam sequi, itaque obcaecati praesentium possimus?</p>
         <a href="#">Read Our Story</a>
+
+        <input type="checkbox" id="navigation_check" class="navigation_check">
+
+        <ul class="navigation">
+            <li class="navigation__li"><a href="#">About</a></li>
+            <li class="navigation__li"><a href="#">Pricing</a></li>
+            <li class="navigation__li"><a href="#">Admissions</a></li>
+            <li class="navigation__li"><button>Schedule a Tour</button></li>
+        </ul>
+
+        <label for="navigation_check" class="navigation_label">
+            <img class="navigation_label_icon" src="images/hamburger_menu2.png" alt="">
+        </label>
     </header>
-    <section class="main_section">
-        <div class="img_container">
+
+
+
+    <section class="main">
+        <div class="main__image_container">
             <img src="./images/team-icon.png" alt="">
             <h3>Team</h3>
         </div>
-        <div class="img_container">
+        <div class="main__image_container">
             <img src="./images/team-icon.png" alt="">
             <h3>Advisors</h3>
         </div>
-        <div class="img_container">
+        <div class="main__image_container">
             <img src="./images/team-icon.png" alt="">
             <h3>Board</h3>
         </div>
-        <div class="img_container">
+        <div class="main__image_container">
             <img src="./images/team-icon.png" alt="">
             <h3>Mentors</h3>
         </div>
